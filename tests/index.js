@@ -1,11 +1,5 @@
-# Nodegram
-> Simplest Instagram Api lib in Javascript
-
-Call **any** Instagram Api method in just 10 lines of code
-
-```javascript
-var Nodegram = require('nodegram');
-var token = 'ACCESS_TOKEN';
+var Nodegram = require('../index');
+var token = 'TOKEN';
 var gram = new Nodegram({accessToken: token});
 var options = {
   '{user-id}': 10499416,
@@ -22,12 +16,3 @@ function onSuccess(res, pag) {
 function onError(err) {
   console.log('onError', err);
 }
-
-```
-
-### TODO
-
-* Token generation support
-* Post method
-* Delete method
-* Testing

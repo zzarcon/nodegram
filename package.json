@@ -1,0 +1,25 @@
+{
+  "name": "nodegram",
+  "version": "0.1.0",
+  "description": "Simplest Instagram Api lib in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "amend": "git add . && git commit --amend --reuse-message=HEAD",
+    "push": "git push --tags && git push",
+    "release": "npm version patch --force && npm run amend && npm run push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzarcon/nodegram.git"
+  },
+  "author": "zzarcon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzarcon/nodegram/issues"
+  },
+  "homepage": "https://github.com/zzarcon/nodegram",
+  "dependencies": {
+    "rsvp": "^3.1.0",
+    "superagent": "^1.7.2"
+  }
+}
