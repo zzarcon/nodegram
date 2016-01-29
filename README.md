@@ -1,4 +1,5 @@
-# Nodegram
+# Nodegram [![npm version](https://badge.fury.io/js/nodegram.svg)](https://badge.fury.io/js/nodegram) [![Dependency Status](https://david-dm.org/zzarcon/nodegram.svg)](https://david-dm.org/zzarcon/nodegram)
+
 > Simplest Instagram Api lib in Javascript
 
 Call **any** Instagram Api method in just 10 lines of code

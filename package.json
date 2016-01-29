@@ -17,6 +17,13 @@
   "bugs": {
     "url": "https://github.com/zzarcon/nodegram/issues"
   },
+  "keywords": [
+    "instagram",
+    "api",
+    "node",
+    "instagram-node",
+    "instagram-node-lib"
+  ],
   "homepage": "https://github.com/zzarcon/nodegram",
   "dependencies": {
     "rsvp": "^3.1.0",
