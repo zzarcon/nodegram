@@ -31,7 +31,40 @@ function onError(err) {
 
 ```
 
+### Authentication
+
+**1- Retrieve auth code**
+```javascript
+var options = {
+  clientId: 'CLIENT_ID',
+  clientSecret: 'CLIENT_SECRET',
+  redirectUri: 'REDIRECT_URI'
+};
+
+var gram = new Nodegram(options);
+var url = gram.getAuthUrl();
+
+```
+**2- Exchange code for access_token**
+
+```javascript
+var code = 'CODE';
+
+gram.getAccessToken(code).then(function(res) {
+  var token = res.access_token;
+
+  console.log(res.user);
+});
+
+```
+
+Now, you are authenticated and you can use your user token as you want
+
+```javascript
+var gram = new Nodegram({accessToken: token});
+
+gram.get('/users/self/media/recent').then(onSuccess).catch(onError);
+```
 ### TODO
 
-* Token generation support
 * Testing
