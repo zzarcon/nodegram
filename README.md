@@ -1,6 +1,6 @@
 # Nodegram [![Build Status](https://travis-ci.org/zzarcon/nodegram.svg?branch=master)](https://travis-ci.org/zzarcon/nodegram) [![npm version](https://badge.fury.io/js/nodegram.svg)](https://badge.fury.io/js/nodegram) [![Dependency Status](https://david-dm.org/zzarcon/nodegram.svg)](https://david-dm.org/zzarcon/nodegram)
 
-> Simplest Instagram Api lib in Javascript
+> Simplest Instagram Api library in Javascript
 
 Call **any** Instagram Api method in just 10 lines of code
 
@@ -58,13 +58,11 @@ gram.getAccessToken(code).then(function(res) {
 
 ```
 
-Now, you are authenticated and you can use your user token as you want
+Now, you are authenticated ^^
+
 
 ```javascript
 var gram = new Nodegram({accessToken: token});
 
 gram.get('/users/self/media/recent').then(onSuccess).catch(onError);
 ```
-### TODO
-
-* Testing
