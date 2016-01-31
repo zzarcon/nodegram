@@ -66,3 +66,12 @@ var gram = new Nodegram({accessToken: token});
 
 gram.get('/users/self/media/recent').then(onSuccess).catch(onError);
 ```
+
+### Motivation
+
+The problem I found while trying to use a Node Instagram library was that you have to learn:
+
+  * The **Instagram Api** methods
+  * The Javascript **library methods**
+
+So, in order to just learn the first point I built this simple Node.js Instagram library to comunicate with Instagram using the exactly syntax that you already now...
