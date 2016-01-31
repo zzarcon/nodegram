@@ -4,6 +4,7 @@
   "description": "Simplest Instagram Api lib in Javascript",
   "main": "index.js",
   "scripts": {
+    "test": "mocha --reporter spec --ui bdd --timeout 5000 tests/*.js",
     "amend": "git add . && git commit --amend --reuse-message=HEAD",
     "push": "git push --tags && git push",
     "release": "npm version patch --force && npm run amend && npm run push && npm publish"
@@ -28,5 +29,9 @@
   "dependencies": {
     "rsvp": "^3.1.0",
     "superagent": "^1.7.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }

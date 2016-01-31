@@ -1,4 +1,4 @@
-# Nodegram [![npm version](https://badge.fury.io/js/nodegram.svg)](https://badge.fury.io/js/nodegram) [![Dependency Status](https://david-dm.org/zzarcon/nodegram.svg)](https://david-dm.org/zzarcon/nodegram)
+# Nodegram [![Build Status](https://travis-ci.org/zzarcon/nodegram.svg?branch=master)](https://travis-ci.org/zzarcon/nodegram) [![npm version](https://badge.fury.io/js/nodegram.svg)](https://badge.fury.io/js/nodegram) [![Dependency Status](https://david-dm.org/zzarcon/nodegram.svg)](https://david-dm.org/zzarcon/nodegram)
 
 > Simplest Instagram Api lib in Javascript
 
