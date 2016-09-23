@@ -78,20 +78,20 @@ describe('Nodegram', function() {
     });
   });
 
-  describe('#buildPath', () => {
-    it('should replace placeholders in path', () => {
+  describe('#buildPath', function() {
+    it('should replace placeholders in path', function() {
       var options = {
         '{tag}': 'someTag',
         count: 20
       };
 
-      const path = gram.buildPath('/test/{tag}/action', options);
+      var path = gram.buildPath('/test/{tag}/action', options);
 
       expect(path.path).to.equal('/test/someTag/action');
       expect(path.options.count).to.equal(20);
     });
 
-    it('should not mutate options passed as parameter', () => {
+    it('should not mutate options passed as parameter', function() {
       var options = {
         '{tag}': 'someTag',
         count: 20
