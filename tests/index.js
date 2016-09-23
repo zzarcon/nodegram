@@ -77,4 +77,29 @@ describe('Nodegram', function() {
       expect(gram.buildUrl).to.be.a('function');
     });
   });
+
+  describe('#buildPath', () => {
+    it('should replace placeholders in path', () => {
+      var options = {
+        '{tag}': 'someTag',
+        count: 20
+      };
+
+      const path = gram.buildPath('/test/{tag}/action', options);
+
+      expect(path.path).to.equal('/test/someTag/action');
+      expect(path.options.count).to.equal(20);
+    });
+
+    it('should not mutate options passed as parameter', () => {
+      var options = {
+        '{tag}': 'someTag',
+        count: 20
+      };
+
+      gram.buildPath('/test/{tag}/action', options);
+
+      expect(options['{tag}']).to.equal('someTag');
+    });
+  });
 });
