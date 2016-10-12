@@ -4,7 +4,8 @@
   "description": "Simplest Instagram Api lib in Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec --ui bdd --timeout 5000 tests/*.js"
+    "test": "mocha --reporter spec --ui bdd --timeout 5000 tests/*.js",
+    "release": "npm version patch && npm publish && git push --tags && git push"
   },
   "repository": {
     "type": "git",
